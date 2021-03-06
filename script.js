@@ -13,18 +13,17 @@ var passwordLength = 0
 
 
 function userPrompt () {
-  passwordLength = parseInt(prompt("How many characters do you want your password to be?"))
-  console.log (passwordLength);
+  passwordLength = prompt("How many characters do you want your password to be?")
+  parseInt(passwordLength)
+  console.log(typeof passwordLength);
 
   if (passwordLength < 8 && passwordLength > 128) { 
     alert("Does not meet password requirments. Password does not meet between 8 and 128 characters")
     
-    return
   } 
 
   if(typeof passwordLength !== "number") {
     alert ("Password length must be a number")
-    return 
   }
 
    isSpecial = confirm ("Would you like to use special characters (!@#)")
