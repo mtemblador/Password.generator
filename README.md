@@ -16,3 +16,5 @@ WHEN I answer each prompt
 THEN my input should be validated and at least one character type should be selected
 WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
+
+![Screenshot](Screen Shot 2021-03-06 at 1.52.05 PM.pn)
